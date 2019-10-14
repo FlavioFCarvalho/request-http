@@ -19,7 +19,7 @@
         </tr>
       </thead>
       <tbody>
-        <tr *ngFor="let curso of cursos">
+        <tr *ngFor="let curso of cursos$ | async">
           <td>{{ curso.id }}</td>
           <td>{{ curso.nome }}</td>
           <td>
