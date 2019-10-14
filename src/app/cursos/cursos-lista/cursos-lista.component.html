@@ -10,7 +10,10 @@
     </div>
   </div>
   <div class="card-body">
-    <table class="table table-hover">
+    <table
+      class="table table-hover"
+      *ngIf="cursos$ | async as cursos; else loanding"
+    >
       <thead>
         <tr>
           <th>#</th>
@@ -19,7 +22,7 @@
         </tr>
       </thead>
       <tbody>
-        <tr *ngFor="let curso of cursos$ | async">
+        <tr *ngFor="let curso of cursos">
           <td>{{ curso.id }}</td>
           <td>{{ curso.nome }}</td>
           <td>
@@ -36,5 +39,9 @@
         </tr>
       </tbody>
     </table>
+
+    <ng-template #loanding>
+      <span>Carregando Cursos...</span>
+    </ng-template>
   </div>
 </div>
