@@ -6,9 +6,10 @@ import { AppComponent } from "./app.component";
 import { HttpClientModule } from "@angular/common/http";
 import { ModalModule } from "ngx-bootstrap/modal";
 import { SharedModule } from "./shared/shared.module";
+import { CursosFormComponent } from './cursos-form/cursos-form.component';
 
 @NgModule({
-  declarations: [AppComponent],
+  declarations: [AppComponent, CursosFormComponent],
   imports: [
     BrowserModule,
     AppRoutingModule,
