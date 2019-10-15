@@ -7,6 +7,26 @@
     {
       "nome": "java",
       "id": 3
+    },
+    {
+      "nome": "Python",
+      "id": 4
+    },
+    {
+      "nome": "Jsaa",
+      "id": 5
+    },
+    {
+      "nome": "Spring Boot",
+      "id": 6
+    },
+    {
+      "nome": "Spring Mvc",
+      "id": 7
+    },
+    {
+      "nome": "Java EE",
+      "id": 8
     }
   ]
 }
