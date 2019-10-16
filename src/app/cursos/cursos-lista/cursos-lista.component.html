@@ -1,4 +1,4 @@
-<div class="card">
+<div class="card mt-3">
   <div class="card-header">
     <div class="float-left">
       <h4>Cursos</h4>
@@ -20,7 +20,7 @@
       <thead>
         <tr>
           <th>#</th>
-          <th>Cursos</th>
+          <th>Curso</th>
           <th></th>
         </tr>
       </thead>
@@ -49,14 +49,14 @@
     <ng-template #loading>
       <span>Carregando Cursos...</span>
     </ng-template>
-    <!--
-    <ng-template #loandingError>
-      <div *ngIf="error$ | async; else loading">
+
+    <!--ng-template #loadingError>
+      <div *ngIf="error$ | async; else loading" >
         Erro ao carregar cursos. Tente novamente mais tarde.
       </div>
       <ng-template #loading>
-        <span>Carregando Cursos...</span>
+          <span>Carregando Cursos...</span>
       </ng-template>
-    </ng-template> -->
+    </ng-template -->
   </div>
 </div>
